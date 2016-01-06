@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+Doughnut.destroy_all
+
+Doughnut.create([
+  {tastiness: 10, flavor: "glazed", image_url:"http://www.eatsunrisedonuts.com/_images/glazed.jpg"}
+])
+
+# when done:
+# rake db:seed
+# rails c
+# Doughnut.all
